@@ -1,0 +1,27 @@
+{
+  "name": "code-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A tiny Gemini-powered coding agent harness with bash and lazy-loaded skills.",
+  "type": "module",
+  "bin": {
+    "gemini-mini-code-agent": "./src/agent.ts"
+  },
+  "scripts": {
+    "dev": "tsx src/agent.ts",
+    "start": "tsx src/agent.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "~2.10.0",
+    "dotenv": "~17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "~22.9.0",
+    "tsx": "~4.22.4",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
