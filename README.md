@@ -10,7 +10,7 @@ It is intentionally small enough to read in one sitting, but it still contains t
 4. Send the tool result back to the model.
 5. Repeat until the model stops asking for tools.
 
-The main implementation lives in [`src/agent.ts`](./src/agent.ts). It is designed for educational use and for blog posts that explain how agent harnesses work under the hood.
+The main implementation lives in [`src/agent.ts`](./src/agent.ts). It is designed for educational use and for [blog posts](https://medium.com/@yuriyluchaninov/a-tiny-claude-code-style-agent-bash-tools-loop-and-a-little-fear-a237ad1d85cd) that explain how agent harnesses work under the hood.
 
 ## What this agent can do
 
@@ -92,14 +92,14 @@ npm run typecheck            # TypeScript typecheck
 
 ## Configuration
 
-| Variable | Default | Description |
-| --- | --- | --- |
-| `GEMINI_API_KEY` | required | Gemini API key. |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Model name. Use a stronger model for harder coding tasks. |
-| `MAX_TURNS` | `25` | Maximum agent-loop iterations. |
-| `COMMAND_TIMEOUT_MS` | `20000` | Bash command timeout. |
-| `MAX_OUTPUT_CHARS` | `12000` | Maximum stored command output. |
-| `AUTO_APPROVE` | `0` | Set to `1` to skip interactive command approval. |
+| Variable | Default            | Description |
+| --- |--------------------| --- |
+| `GEMINI_API_KEY` | required           | Gemini API key. |
+| `GEMINI_MODEL` | `gemini-3.5-flash` | Model name. Use a stronger model for harder coding tasks. |
+| `MAX_TURNS` | `25`               | Maximum agent-loop iterations. |
+| `COMMAND_TIMEOUT_MS` | `20000`            | Bash command timeout. |
+| `MAX_OUTPUT_CHARS` | `12000`            | Maximum stored command output. |
+| `AUTO_APPROVE` | `0`                | Set to `1` to skip interactive command approval. |
 
 ## Architecture
 
